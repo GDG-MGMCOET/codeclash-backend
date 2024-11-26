@@ -28,7 +28,7 @@ const ParticipantsSchema = new mongoose.Schema(
         "TTCS-C",
         "STCS-A",
         "STCS-B",
-        "STCS-AI/ML",
+        "STCS-C",
         "FT-1",
         "FT-2",
         "FT-3",
@@ -42,6 +42,11 @@ const ParticipantsSchema = new mongoose.Schema(
     hackerrank_username: {
       type: String,
       required: true,
+    },
+    participated: {
+      type: Boolean,
+      required: true,
+      default: false,
     },
   },
   { timestamps: true }
