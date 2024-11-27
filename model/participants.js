@@ -52,6 +52,9 @@ const ParticipantsSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-const participantsModel = mongoose.model("Participants", ParticipantsSchema);
+const participantsModel = mongoose.model(
+  "CodeClashParticipants",
+  ParticipantsSchema
+);
 
 module.exports = participantsModel;
