@@ -3,7 +3,6 @@ const Participants = require("../model/participants");
 
 const createParticipants = async (req, res) => {
   try {
-    console.log(req.body);
     const {
       name,
       email,

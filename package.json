@@ -4,7 +4,9 @@
   "description": "Codeclash",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "author": "GDG on campus MGMCOET",
   "license": "ISC",
@@ -17,3 +19,4 @@
     "nodemailer": "^6.9.16"
   }
 }
+
