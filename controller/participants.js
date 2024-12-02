@@ -12,6 +12,13 @@ const createParticipants = async (req, res) => {
       class_roll_no,
       hackerrank_username,
     } = req.body;
+    //close registrations
+    return res.send({
+      status: 400,
+      success: false,
+      message: "Registrations Close",
+      data: {},
+    });
 
     if (
       _.isNil(name) ||
